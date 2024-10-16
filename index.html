@@ -1,0 +1,152 @@
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+<title>QuittersNeverWin</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Creepster', cursive;
+        }
+        .btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover {background: black; }
+
+
+.success {color: red;}
+    </style>
+</head>
+<body style = "background-color: black;">
+    <div style = "position: relative; display: inline-block ;     
+    border-top: 4px solid white;
+    border-right: 4px solid white;
+    border-left: 4px solid white;
+    border-bottom: 4px solid white;">
+        <div style = "position: absolute; 
+                      display: flex; 
+                      width:100%; 
+                      align-items: center;
+                      padding:20px">
+            
+            <div style ="position: relative; 
+                        height: 30px; 
+                        width: 100%;
+                        display: flex; 
+                        justify-content: flex-end; 
+                        border-top: 4px solid white;
+                        border-left: 4px solid white;
+                        border-bottom: 4px solid white;">
+                <div  style = "background-color: red; 
+                                height: 30px; 
+                                width: 100%"></div>
+            
+                <div public id = "playerHealth"
+                style = "position: absolute; 
+                        background: #57E964; 
+                        top:0; 
+                        right:0; 
+                        bottom:0; 
+                        width:100%"></div>
+            </div>
+            
+
+            
+            <div 
+              id = "timer"
+            style = "background-color: black;
+                    width:100px;
+                    height:100px;
+                    flex-shrink: 0;
+                    display: flex;
+                    align-items:center;
+                    justify-content:center;
+                    border-top: 4px solid white;
+                    border-right: 4px solid white;
+                    border-left: 4px solid white;
+                    border-bottom: 4px solid white;
+                    color:red;
+            ">
+            10
+       
+        </div>
+
+
+            
+    <div style = "position: relative; height: 30px; width: 100%;
+            border-top: 4px solid white;
+            border-right: 4px solid white;
+            border-bottom: 4px solid white;">
+            <div  style = "background-color: red; height: 30px; width: 100%"></div>
+        
+            <div public id = "enemyHealth"
+            style = "position: absolute; 
+                    background: #57E964; 
+                    top:0; 
+                    right:0; 
+                    bottom:0; 
+                    left:0"></div>
+        </div>
+        <div>         <div id = "playerRounds"style = "position:absolute;
+            text-decoration:none;
+            display: flex; 
+            
+            top: 100px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            color:red; 
+            font-size:30px;">Rounds: 0</div>
+             <div id = "enemyRounds"style = "position:absolute;
+             text-decoration:none;
+             display: flex; 
+            
+             top: 100px;
+             right: 0;
+             bottom: 0;
+             left: 1300px;
+             color:red; 
+             font-size:30px;">Rounds: 0</div>  </div>
+        </div>
+        <div id = "displayText"style = "position: absolute; 
+                                        display: none; 
+                                        align-items: center; 
+                                        justify-content: center;
+                                        top: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        left: 0;
+                                        color:red; 
+                                        font-size:60px;">
+    Tie
+    </div>
+    <div id = "displayPrompt"style = "position:absolute;
+                                        text-decoration:none;
+                                        display: none; 
+                                        align-items: center;
+                                       justify-content: center;
+                                        top: 100px;
+                                        right: 0;
+                                        bottom: 0;
+                                        left: 0;
+                                        color:black; 
+                                        font-size:30px;">
+    <a href = "menu.html" style = "color:red; "> <button class="btn success">Return to Menu?</button></a>
+    <button class="btn success"onclick = "reallyResetMatch({player, enemy})"style = "color: red;">Rematch?</button>
+ 
+</div>
+
+  <canvas ></canvas>
+    </div>
+
+    <script src = "javaScript/classes.js"></script>
+<script src = "index.js"></script>
+
+</body>
